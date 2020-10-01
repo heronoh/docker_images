@@ -30,7 +30,7 @@ RUN set -e \
 
 RUN wget --no-check-certificate ftp://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/edirect.tar.gz \
   && tar -xzf edirect.tar.gz \
-  && cpanm HTML::Entities \
+  && cpan HTML::Entities \
   && rm edirect.tar.gz
 
 RUN cd edirect \
